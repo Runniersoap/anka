@@ -1,12 +1,23 @@
-# React + Vite
+# 👁️ Inclusive Mobility Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inclusive Mobility Assistant es una aplicación móvil desarrollada en **React Native** que tiene como objetivo mejorar la movilidad y autonomía de personas con discapacidad visual.
 
-Currently, two official plugins are available:
+## 🚀 Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧠 **Machine Learning**: Detección de obstáculos y reconocimiento de objetos en tiempo real.
+- 🗣️ **Reconocimiento de Voz**: Navegación por comandos de voz para una interacción sin manos.
+- 🕶️ **Realidad Aumentada**: Información contextual y guiado visual adaptado para acompañantes o usuarios con baja visión.
+- 📍 **Guía de rutas seguras**: Mapas optimizados para movilidad accesible.
+- 🔊 **Asistente de audio**: Retroalimentación auditiva clara e intuitiva para ayudar en la orientación.
 
-## Expanding the ESLint configuration
+## 🧰 Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React Native** (con Expo)
+- **TypeScript** para mayor seguridad y escalabilidad
+- **TensorFlow Lite / ONNX** para modelos de IA embebidos
+- **Azure Cognitive Services** (Speech, Vision)
+- **ARCore / ARKit** para funciones de realidad aumentada
+- **Redux / Context API** para gestión de estado global
+- **React Navigation** para manejo de rutas
+
+## 📁 Estructura del repositorio
