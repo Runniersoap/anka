@@ -1,16 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Star, ArrowRight, CheckCircle2 } from "lucide-react";
-import { Header } from "./components/Header";
-import { Banner } from "./components/Banner";
-import { Services } from "./components/Services";
-import { Benefits } from "./components/Benefits";
-import { Pricing } from "./components/Pricing";
-import { Integration } from "./components/Integration";
-import { CTASection } from "./components/CTASection";
-import { Footer } from "./components/Footer";
-import AppRouter from "./AppRouter";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Home from "./pages/Home";
+import Configuration from "./pages/Configuration";
+import Alerts from "./pages/Alerts";
+import Statistics from "./pages/Statistics";
+import { StatusProvider } from "./context/statusContext";
+import Guide from "./pages/Guide";
+import ImageDescriptionButton from "./components/ImageDescriptionButton";
 
-export const App = () => {
-  return <AppRouter />;
-};
+function App() {
+  return (
+    <StatusProvider>
+      <BrowserRouter>
+        <ImageDescriptionButton />
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/alerts" element={<Alerts />} />
+          <Route path="/configuration" element={<Configuration />} />
+          <Route path="/statistics" element={<Statistics />} />
+          <Route path="/guide" element={<Guide />} />
+          <Route path="/*" element={<Navigate to="/home" replace />} />
+        </Routes>
+      </BrowserRouter>
+    </StatusProvider>
+  );
+}
+
+export default App;
